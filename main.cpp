@@ -60,9 +60,9 @@ int main(){
 		cout<<"Elijio el caso 2"<<endl;
 		
 		cout<<"Ingrese a:"<<endl;
-		cin<<a;
+		cin>>a;
 		cout<<"Ingrese b:"<<endl;
-                cin<<b;
+                cin>>b;
 		cout<<"Ingrese n:"<<endl;
                 cin>>n;
 
