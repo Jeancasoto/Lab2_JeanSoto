@@ -2,30 +2,25 @@
 using namespace std;
 
 int primo(int);
+int var; 
 
-  //Revisa si es primo
-       int  primo(int numero){
-        int cont;
-                for(int i=1; i<=numero; i++){
-                        if(numero%i==0){
-                        cont++;
+ //Revisa si es primo
+ int  primo(int numero){
+ 	int cont=0;
+        for(int i=1; i<=numero; i++){
+        	if(numero%i==0){
+               	cont++;
+	        }//fin if       
+       }//fin for
+     	 if(cont==2){
+     	   return 100;
+     	  }else{
+    	    return 500;
+         }//fin else
 
-
-                        }//fin if       
-                }//fin for
-                if(cont==2){
-                        return 100;
-                }else{
-                        return 500;
-                }
-
-
-        }//fin metodo
+ }//fin metodo
 
 int main(){
-
-
-
 	while(true){
 
 
@@ -44,29 +39,44 @@ int main(){
 		cout<<"Elijio el caso 1"<<endl;
 		cout<<"Ingrese un numero:"<<endl;
 		cin>>num;
-		/*for(int i=1; i<num; i++){
-			for(int i=1; i<num; i++){
-
-
-                	}// fin for interno
-		}//fin for externo
-		cout<<"La suma es:"<<acumulador<<endl;*/
 		
 
-		for(int i=1; i<num; i++){
-		int var=primo(i);
-		cout<<i;
-		cout<<"------"<<var<<endl;
+			for(int i=1; i<num; i++){
+	 		var=primo(i);
+				if(var==100){
+				acumulador+=i;
+				}//fin if que acumula
 
-
-		}
-                cout<<"-------"<<acumulador<<endl;
+			}//fin for
+                cout<<"La suma es-----"<<acumulador+1<<endl;
 		
 		}//fin case 1
 		break;
 		case 2: {
-
+		int acumulador=0;
+		int a;
+		int b;
+		int n;
 		cout<<"Elijio el caso 2"<<endl;
+		
+		cout<<"Ingrese a:"<<endl;
+		cin<<a;
+		cout<<"Ingrese b:"<<endl;
+                cin<<b;
+		cout<<"Ingrese n:"<<endl;
+                cin>>n;
+
+		for(int i=2;i<20;i++ ){
+			if(i%a==0){
+			acumulador+=i;
+			}
+			if(i%b==0){
+                        acumulador+=i;
+                        }
+
+
+		}//fin for
+		cout<<"La suma es -----"<<acumulador<<endl;
 
 
 
