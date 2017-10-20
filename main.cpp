@@ -108,7 +108,14 @@ int main(){
 		
 		}//Fin for
 		
-		cout<<p1<<" + "<<p2<<" = "<<numerito<<endl;
+		cout<<"Hola"<<endl;
+
+		if(p1+p2==numerito){
+			cout<<p1<<" + "<<p2<<" = "<<numerito<<endl;
+
+		
+		}
+		
 		
 		
 		
