@@ -53,7 +53,7 @@ int main(){
 		}//fin case 1
 		break;
 		case 2: {
-		int acumulador=0;
+		int acum=0;
 		int a;
 		int b;
 		int n;
@@ -68,15 +68,15 @@ int main(){
 
 		for(int i=2;i<20;i++ ){
 			if(i%a==0){
-			acumulador+=i;
+			acum+=i;
 			}
 			if(i%b==0){
-                        acumulador+=i;
+                        acum+=i;
                         }
 
 
 		}//fin for
-		cout<<"La suma es -----"<<acumulador<<endl;
+		cout<<"La suma es -----"<<acum<<endl;
 
 
 
