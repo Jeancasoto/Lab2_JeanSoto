@@ -87,8 +87,31 @@ int main(){
 		break;
 
 		case 3:{
-
+		int numerito;
+		int residuo;
+		int p1;// primo 1
+		int p2;// primo 2
 		cout<<"Elijio el caso 3"<<endl;
+		cout<<"Ingrese un numero"<<endl;
+		cin>>numerito;
+		
+		for(int i=1; i<numerito;i++){
+			if(primo(i)==100){
+			p1=i;
+			residuo=numerito-i;
+				
+				if(primo(residuo)==100){
+				p2=residuo;
+				
+				}
+			}
+		
+		}//Fin for
+		
+		cout<<p1<<" + "<<p2<<" = "<<numerito<<endl;
+		
+		
+		
 
 		}//fin case 3
 		break;	
