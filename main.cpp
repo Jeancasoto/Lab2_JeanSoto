@@ -66,13 +66,16 @@ int main(){
 		cout<<"Ingrese n:"<<endl;
                 cin>>n;
 
-		for(int i=2;i<20;i++ ){
-			if(i%a==0){
-			acum+=i;
+		for(int j=2;j<=n;j++ ){
+			if(j%a==0 && j%b!=0){
+			acum+=j;
 			}
-			if(i%b==0){
-                        acum+=i;
+			 if(j%b==0&&j%a!=0){
+                        acum+=j;
                         }
+			if(j%a==0&&j%b==0){
+			acum+=j;
+			}
 
 
 		}//fin for
